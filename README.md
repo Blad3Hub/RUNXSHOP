@@ -50,11 +50,13 @@ local plrGem = game:GetService("Players").LocalPlayer["_stats"]["gem_amount"].Va
 local gemrw = game:GetService("Players").LocalPlayer.PlayerGui.Waves.HealthBar.IngameRewards.GemRewardTotal.Holder.Main.Amount.Text
 
 _G.WantedGem = 1000 --ฟามถึงกี่เจม
-_G.WebhookURL = value -- ใส่ลิ้ง
-
+_G.WebhookURL = "https://discord.com/api/webhooks/1036233511503401010/eQiLp9Z6HBvDNoGyKo6zSf53Uon3uFwc4sJOWJP72TMEFvo1uMLRjH6jlPngRayNzYca" -- ใส่ลิ้ง
+while wait() do
 if gemrw ~= "+500"then
-    SendWebhook("link webhook",
+    SendWebhook("https://discord.com/api/webhooks/1036233511503401010/eQiLp9Z6HBvDNoGyKo6zSf53Uon3uFwc4sJOWJP72TMEFvo1uMLRjH6jlPngRayNzYca",
     "💕**  --- RunX ● Shop --- **💕\n\n".."**┇ข้อมูลของสุดหล่อ┇**\n\n".." ● ชื่อ :".."||"..game.Players.LocalPlayer.Name.."||\n\n".." ● เลเวล : "..FullplrLvl.."\n\n".."● จำนวนเพชร : ["..plrGem.."/".._G.WantedGem.."]\n".."\nReward : \n\n"..gemrw.." 💎".."\n\n---------------------------------\n\n".."RunX ● Shop ")
+    task.wait(1)
 end 
+end
 
 syn.queue_on_teleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/Blad3Hub/RUNXSHOP/main/README.md"))()]])
