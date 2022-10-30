@@ -57,4 +57,4 @@ if gemrw ~= "+500"then
     "💕**  --- RunX ● Shop --- **💕\n\n".."**┇ข้อมูลของสุดหล่อ┇**\n\n".." ● ชื่อ :".."||"..game.Players.LocalPlayer.Name.."||\n\n".." ● เลเวล : "..FullplrLvl.."\n\n".."● จำนวนเพชร : ["..plrGem.."/".._G.WantedGem.."]\n".."\nReward : \n\n"..gemrw.." 💎".."\n\n---------------------------------\n\n".."RunX ● Shop ")
 end 
 
-syn.queue_on_teleport([[]])
+syn.queue_on_teleport([[loadstring(game:HttpGet("https://raw.githubusercontent.com/Blad3Hub/RUNXSHOP/main/README.md"))()]])
